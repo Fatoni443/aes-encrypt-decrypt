@@ -1,0 +1,24 @@
+const CryptoJS = require("crypto-js");
+const fs = require("fs");
+const readline = require("readline");
+
+// Membaca kunci rahasia dari file key.txt
+const key = fs.readFileSync("key.txt", "utf8").trim();
+
+// Fungsi untuk mengenkripsi data
+function encryptData(data) {
+    const encrypted = CryptoJS.AES.encrypt(data, key).toString();
+    return encrypted;
+}
+
+// Input data yang ingin dienkripsi
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Masukkan data yang ingin dienkripsi: ", (data) => {
+    const encryptedData = encryptData(data);
+    console.log("Data terenkripsi:", encryptedData);
+    rl.close();
+});

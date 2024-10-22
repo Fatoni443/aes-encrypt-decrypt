@@ -4,8 +4,8 @@
   "description": "Library untuk enkripsi dan dekripsi menggunakan AES dengan CryptoJS",
   "main": "aesenc.js",
   "scripts": {
-    "encrypt": "node aesenc.js",
-    "decrypt": "node aesdec.js"
+    "encrypt": "node aesenc",
+    "decrypt": "node aesdec"
   },
   "keywords": [
     "encryption",

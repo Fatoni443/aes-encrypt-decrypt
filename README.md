@@ -17,7 +17,7 @@ Sebelum menjalankan proyek ini, pastikan kamu sudah menginstal [Node.js](https:/
 1. Clone repositori ini ke mesin lokalmu:
 
    ```bash
-   git clone https://github.com/ditt12/aes-encrypt-decrypt.git
+   git clone https://github.com/ditt12/aes-encrypt-decrypt
    ```
    ```bash
    cd aes-encrypt-decrypt

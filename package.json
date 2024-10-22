@@ -1,0 +1,21 @@
+{
+  "name": "aes-encrypt-decrypt",
+  "version": "1.0.0",
+  "description": "Library untuk enkripsi dan dekripsi menggunakan AES dengan CryptoJS",
+  "main": "aesenc.js",
+  "scripts": {
+    "encrypt": "node aesenc.js",
+    "decrypt": "node aesdec.js"
+  },
+  "keywords": [
+    "encryption",
+    "decryption",
+    "aes",
+    "cryptojs"
+  ],
+  "author": "asrv",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
